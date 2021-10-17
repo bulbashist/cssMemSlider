@@ -6,27 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link media="(min-width: 769px)" rel="stylesheet" href="style.css">
+    <link media="(max-width: 768px)" rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
     <main>
-        
-        <input type="radio" name="slide" id = "r1" class = "radiobtn">
-        <input type="radio" name="slide" id = "r2" class = "radiobtn">
-        <input type="radio" name="slide" id = "r3" class = "radiobtn">
-        <input type="radio" name="slide" id = "r4" class = "radiobtn">
-        <label for = "r1" class = "label">cokmve</label>
+        <input type="radio" name="slide" id="r1" class="radiobtn" checked>
+        <input type="radio" name="slide" id="r2" class="radiobtn">
+        <input type="radio" name="slide" id="r3" class="radiobtn">
+        <input type="radio" name="slide" id="r4" class="radiobtn">
         <div class="slider">
             <div class="slider-wrapper">
-                <img src="assets/cat1.jpg" alt="">
-                <img src="assets/cat1.jpg" alt="">
-                <img src="assets/cat1.jpg" alt="">
-                <img src="assets/cat1.jpg" alt="">
+                <img src="assets/mem1.jpg" alt="">
+                <img src="assets/mem2.jpg" alt="">
+                <img src="assets/mem3.jpg" alt="">
+                <img src="assets/mem4.jpg" alt="">
             </div>
         </div>
-        <div class="">
-            <p class=""></p>
+        <div class="other-items">
+            <div class = "slide-descriptions">
+                <p class="slide-description">This is the first slide</p>
+                <p class="slide-description">Second one!</p>
+                <p class="slide-description">Not the fourth slide</p>
+                <p class="slide-description">The last one</p>
+            </div>
+            <ul class="slider-bullets">
+                <li>
+                    <label for="r1" class="label">
+                        <div class="bullet"></div>
+                    </label>
+                </li>
+                <li>
+                    <label for="r2" class="label">
+                        <div class="bullet"></div>
+                    </label>
+                </li>
+                <li>
+                    <label for="r3" class="label">
+                        <div class="bullet"></div>
+                    </label>
+                </li>
+                <li>
+                    <label for="r4" class="label">
+                        <div class="bullet"></div>
+                    </label>
+                </li>
+            </ul>
         </div>
     </main>
 </body>
